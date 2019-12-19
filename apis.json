@@ -1,0 +1,137 @@
+{
+    "name": "MotaWord",
+    "description": "<p>MotaWord is the world&rsquo;s fastest, lowest cost, cloud-based, collaborative business translation platform.MotaWord combines the efforts of talented human translators through the use of a cloud based translation platform. Our translators are able to login simultaneously into projects that fit their language combination and provide translation service collaboratively - while also seeing the whole content for contextual purposes. This ability to simultaneously utilize multiple translators makes MotaWord exceptionally fast and highly accurate.<\/p>",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/motaword-logo.png",
+    "tags": [
+        "api provider",
+        "have api",
+        "have swagger",
+        "new",
+        "relative data",
+        "service api",
+        "translations"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/motaword\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "MotaWord API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/motaword-logo.png",
+            "humanURL": "http:\/\/www.motaword.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/motaword-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/motaword-api.json"
+                }
+            ]
+        },
+        {
+            "name": "Mota Word",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/motaword-logo.png",
+            "humanURL": "http:\/\/www.motaword.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/mota-word-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/mota-word.json"
+                }
+            ]
+        },
+        {
+            "name": "MotaWord",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/motaword-logo.png",
+            "humanURL": "http:\/\/www.motaword.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/motaword-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/motaword.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Website",
+            "url": "http:\/\/www.motaword.com"
+        },
+        {
+            "type": "Blog",
+            "url": "https:\/\/www.motaword.com\/developer\/blog"
+        },
+        {
+            "type": "Developers",
+            "url": "https:\/\/www.motaword.com\/developer"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/motaword"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18726-2019-09-03-19-39-07.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18726-2019-09-03-19-39-20.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18726-2019-09-03-19-39-27.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18726-2019-09-03-19-39-48.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18726-2019-09-03-19-39-56.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18726-2019-09-03-19-40-10.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18726-2019-09-03-19-41-19.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18726-2019-09-04-02-15-16.json"
+        },
+        {
+            "type": "Pricing",
+            "url": "https:\/\/www.motaword.com\/pricing"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/motaword"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/motaword.com"
+        }
+    ]
+}
