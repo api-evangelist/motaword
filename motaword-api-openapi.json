@@ -1,0 +1,1780 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "alpha-0.1.",
+        "title": "MotaWord API",
+        "description": "Use MotaWord API to post and track your translation projects.",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.motaword.com\/"
+    ],
+    "paths": {
+        "\/": {
+            "get": {
+                "summary": "Available endpoints",
+                "description": "The root endpoint will provide you a JSON Swagger definition.\n",
+                "operationId": "GetEndpoints",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/formats": {
+            "get": {
+                "summary": "Get a list of supported formats",
+                "description": "Get a list of supported formats for documents, style guides and extensions.\n",
+                "operationId": "GetFormats",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/languages": {
+            "get": {
+                "summary": "Get a list of supported languages",
+                "description": "Get a list of supported languages",
+                "operationId": "GetLanguages",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/me": {
+            "get": {
+                "summary": "Get your account information and summary.",
+                "description": "",
+                "operationId": "GetAccount",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/projects": {
+            "get": {
+                "summary": "Get a list of your projects",
+                "description": "Get a list of your projects",
+                "operationId": "GetProjects",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "Get a new quote",
+                "description": "Create a new project",
+                "operationId": "CreateProject",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "source_language",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "target_languages[]",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "callback_url",
+                        "in": "formData",
+                        "description": "Optional. If you provide a callback URL, we will send POST callbacks when the status of the current project is changed. Possible status changes are, 'translated', 'proofread', 'completed'."
+                    },
+                    {
+                        "name": "custom",
+                        "in": "formData",
+                        "description": "Optional. This is a consistent custom data parameter that will be given to you in the response across every request of this project model. Values should be provided like this, custom[my_key] = my_value."
+                    },
+                    {
+                        "name": "documents[]",
+                        "in": "formData",
+                        "description": "Optional. You can add as many files as you want in documents[] parameter. Or you add your documents later in separate calls."
+                    },
+                    {
+                        "name": "styleguides[]",
+                        "in": "formData",
+                        "description": "Optional. You can add as many files as you want in styleguides[] parameter. Or you add your style guides later in separate calls."
+                    },
+                    {
+                        "name": "glossaries[]",
+                        "in": "formData",
+                        "description": "Optional. Only one glossary is supported at the moment."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/projects\/{id}": {
+            "get": {
+                "summary": "Get single project",
+                "description": "Get single project",
+                "operationId": "GetProject",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Project ID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Update project language pairs",
+                "description": "Update project language pairs",
+                "operationId": "UpdateProject",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Project ID"
+                    },
+                    {
+                        "name": "source_language",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "target_languages[]",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "callback_url",
+                        "in": "formData",
+                        "description": "Optional. If you provide a callback URL, we will send POST callbacks when the status of the current project is changed. Possible status changes are, 'translated', 'proofread', 'completed'."
+                    },
+                    {
+                        "name": "custom",
+                        "in": "formData",
+                        "description": "Optional. This is a consistent custom data parameter that will be given to you in the response across every request of this project model. Values should be provided like this, custom[my_key] = my_value."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/projects\/{id}\/download\/{language}": {
+            "post": {
+                "summary": "Download the latest translation package.",
+                "description": "Download the latest translation package. If a language is provided, only the translation package of that language is returned. You must have given a \/package call beforehand and wait until the packaging status is 'completed'.",
+                "operationId": "Download",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Project ID"
+                    },
+                    {
+                        "name": "language",
+                        "in": "path",
+                        "description": "Optional language code. If you need, you can download the translation of only a specific language."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/projects\/{id}\/launch": {
+            "post": {
+                "summary": "Launch your translation project",
+                "description": "",
+                "operationId": "LaunchProject",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Project ID"
+                    },
+                    {
+                        "name": "payment_method",
+                        "in": "formData",
+                        "description": "Optional. Determines which method to use for payment. Options are 'corporate', 'client'."
+                    },
+                    {
+                        "name": "payment_code",
+                        "in": "formData",
+                        "description": "Optional. According to your corporate account configuration, this may be required."
+                    },
+                    {
+                        "name": "budget_code",
+                        "in": "formData",
+                        "description": "Optional with corporate accounts. Not available for others."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/projects\/{id}\/package\/{language}": {
+            "post": {
+                "summary": "Package the project to be downloaded.",
+                "description": "Package the translation project, make it ready to be downloaded.",
+                "operationId": "Package",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Project ID"
+                    },
+                    {
+                        "name": "language",
+                        "in": "path",
+                        "description": "Optional language code. If you need, you can download the translation of only a specific language."
+                    },
+                    {
+                        "name": "async",
+                        "in": "query",
+                        "description": "If you want to package and download the translation synchronously, mark this parameter as '0'. It will package the translation and then return the packaged file in the response, identical to \/download call after an asynchronous \/package call."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/projects\/{id}\/package\/check": {
+            "get": {
+                "summary": "Track the status of translation packaging.",
+                "description": "This request will tell you the current progress of the translation packaging. You will use the 'key' provided by the \/package call.",
+                "operationId": "TrackPackage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Project ID"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "This is the package tracking key provided in the response of a \/package call."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/projects\/{id}\/progress": {
+            "get": {
+                "summary": "Get project progress",
+                "description": "Get the progress of an already launched project.",
+                "operationId": "GetProgress",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Project ID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/projects\/{projectId}\/activities": {
+            "get": {
+                "summary": "Get a list of realtime activities.",
+                "description": "Get a list of realtime activities on the project, such as translation suggestion and translation approval.",
+                "operationId": "GetActivities",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": "Project ID"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/projects\/{projectId}\/activities\/{activityId}": {
+            "get": {
+                "summary": "Get a single realtime activity.",
+                "description": "Get a single realtime activity.",
+                "operationId": "GetActivity",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": "Project ID"
+                    },
+                    {
+                        "name": "activityId",
+                        "in": "path",
+                        "description": "Activity ID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "Submit a comment to an activity.",
+                "description": "Submit a comment to an activity.",
+                "operationId": "SubmitComment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": "Project ID"
+                    },
+                    {
+                        "name": "activityId",
+                        "in": "path",
+                        "description": "Activity ID"
+                    },
+                    {
+                        "name": "comment",
+                        "in": "formData",
+                        "description": "Comment text."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/projects\/{projectId}\/activities\/{activityId}\/comments": {
+            "get": {
+                "summary": "Get a list of comments belonging to this activity.",
+                "description": "Get a list of comments belonging to this activity.",
+                "operationId": "GetActivityComments",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": "Project ID"
+                    },
+                    {
+                        "name": "activityId",
+                        "in": "path",
+                        "description": "Activity ID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/projects\/{projectId}\/comments": {
+            "get": {
+                "summary": "Get a list of activity comments throughout the whole project.",
+                "description": "Get a list of activity comments throughout the whole project.",
+                "operationId": "GetComments",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": "Project ID"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/projects\/{projectId}\/documents": {
+            "get": {
+                "summary": "Get a list of documents",
+                "description": "Get a list of documents",
+                "operationId": "GetDocuments",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": "Project ID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "Upload a new document",
+                "description": "Upload a new document",
+                "operationId": "CreateDocument",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": "Project ID"
+                    },
+                    {
+                        "name": "documents[]",
+                        "in": "formData",
+                        "description": "Optional. You can add as many files as you want in documents[] parameter. Or you add your documents later in separate calls."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/projects\/{projectId}\/documents\/{documentId}": {
+            "delete": {
+                "summary": "Delete the document",
+                "description": "Delete the document",
+                "operationId": "DeleteDocument",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": "Project ID"
+                    },
+                    {
+                        "name": "documentId",
+                        "in": "path",
+                        "description": "Document ID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "get": {
+                "summary": "Get single document",
+                "description": "Get single document",
+                "operationId": "GetDocument",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": "Project ID"
+                    },
+                    {
+                        "name": "documentId",
+                        "in": "path",
+                        "description": "Document ID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Update the document.",
+                "description": "Update the document. File name and contents will replaced with the new one.",
+                "operationId": "UpdateDocument",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": "Project ID"
+                    },
+                    {
+                        "name": "documentId",
+                        "in": "path",
+                        "description": "Document ID"
+                    },
+                    {
+                        "name": "documents",
+                        "in": "formData",
+                        "description": "Single file data. The name is plural to provide a consistent naming convention."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/projects\/{projectId}\/documents\/{documentId}\/download": {
+            "get": {
+                "summary": "Download a document",
+                "description": "Download a document",
+                "operationId": "DownloadDocument",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": "Project ID"
+                    },
+                    {
+                        "name": "documentId",
+                        "in": "path",
+                        "description": "Document ID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/projects\/{projectId}\/glossaries": {
+            "get": {
+                "summary": "Get a list of glossaries",
+                "description": "Get a list of glossaries",
+                "operationId": "GetGlossaries",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": "Project ID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "Upload a new glossary",
+                "description": "Upload a new glossary",
+                "operationId": "CreateGlossary",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": "Project ID"
+                    },
+                    {
+                        "name": "glossaries",
+                        "in": "formData",
+                        "description": "You can only add one glossary, even though the name suggests multiple glossaries. This may be updated in the future to support multiple glossaries."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/projects\/{projectId}\/glossaries\/{glossaryId}": {
+            "delete": {
+                "summary": "Delete the glossary",
+                "description": "Delete the glossary",
+                "operationId": "DeleteGlossary",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": "Project ID"
+                    },
+                    {
+                        "name": "glossaryId",
+                        "in": "path",
+                        "description": "Glossary ID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "get": {
+                "summary": "Get single glossary",
+                "description": "Get single glossary",
+                "operationId": "GetGlossary",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": "Project ID"
+                    },
+                    {
+                        "name": "glossaryId",
+                        "in": "path",
+                        "description": "Glossary ID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Update the glossary.",
+                "description": "Update the glossary. File name and contents will replaced with the new one.",
+                "operationId": "UpdateGlossary",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": "Project ID"
+                    },
+                    {
+                        "name": "glossaryId",
+                        "in": "path",
+                        "description": "Glossary ID"
+                    },
+                    {
+                        "name": "glossaries",
+                        "in": "formData",
+                        "description": "You can only add one glossary, even though the name suggests multiple glossaries. This may be updated in the future to support multiple glossaries."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/projects\/{projectId}\/glossaries\/{glossaryId}\/download": {
+            "get": {
+                "summary": "Download a glossary",
+                "description": "Download a glossary",
+                "operationId": "DownloadGlossary",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": "Project ID"
+                    },
+                    {
+                        "name": "glossaryId",
+                        "in": "path",
+                        "description": "Glossary ID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/projects\/{projectId}\/styleguides": {
+            "get": {
+                "summary": "Get a list of style guides",
+                "description": "Get a list of style guides",
+                "operationId": "GetStyleGuides",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": "Project ID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "Upload a new style guide",
+                "description": "Upload a new style guide",
+                "operationId": "CreateStyleGuide",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": "Project ID"
+                    },
+                    {
+                        "name": "styleguides[]",
+                        "in": "formData",
+                        "description": "Optional. You can add as many files as you want in styleguides[] parameter. Or you add your style guides later in separate calls."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/projects\/{projectId}\/styleguides\/{styleGuideId}": {
+            "delete": {
+                "summary": "Delete the style guide",
+                "description": "Delete the style guide",
+                "operationId": "DeleteStyleGuide",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": "Project ID"
+                    },
+                    {
+                        "name": "styleGuideId",
+                        "in": "path",
+                        "description": "Style Guide ID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "get": {
+                "summary": "Get single style guide",
+                "description": "Get single style guide",
+                "operationId": "GetStyleGuide",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": "Project ID"
+                    },
+                    {
+                        "name": "styleGuideId",
+                        "in": "path",
+                        "description": "Style Guide ID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Update the style guide.",
+                "description": "Update the style guide. File name and contents will replaced with the new one.",
+                "operationId": "UpdteStyleGuide",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": "Project ID"
+                    },
+                    {
+                        "name": "styleGuideId",
+                        "in": "path",
+                        "description": "Style Guide ID"
+                    },
+                    {
+                        "name": "styleguides",
+                        "in": "formData",
+                        "description": "Single file data. The name is plural to provide a consistent naming convention."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/projects\/{projectId}\/styleguides\/{styleGuideId}\/download": {
+            "get": {
+                "summary": "Download a style guide",
+                "description": "Download a style guide",
+                "operationId": "DownloadStyleGuide",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": "Project ID"
+                    },
+                    {
+                        "name": "styleGuideId",
+                        "in": "path",
+                        "description": "Style Guide ID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/token": {
+            "post": {
+                "summary": "Retrieve an access token to interact with the API.",
+                "description": "MotaWord API is using OAuth2 procedures when authenticating or authorizing your API call. Currently, we only allow Client Credential type flow.\n",
+                "operationId": "GetAccessToken",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "grant_type",
+                        "in": "formData",
+                        "description": "OAuth2 grant type. Currently only 'client_credentials' available."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON representation of our Swagger API definition.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Account"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Account": {
+                "type": "object",
+                "properties": {
+                    "billing": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "created_at": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "links": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "stats": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "billing": {
+                "type": "object"
+            },
+            "links": {
+                "type": "object"
+            },
+            "stats": {
+                "type": "object"
+            },
+            "Activity": {
+                "type": "object",
+                "properties": {
+                    "activity_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "links": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "source_text": {
+                        "description": "Source text",
+                        "type": "string"
+                    },
+                    "target_text": {
+                        "description": "Target text of the activity, which is actually the translation of the source text.",
+                        "type": "string"
+                    },
+                    "translator": {
+                        "description": "Unique identifier of the translator\/proofreader of this activity.",
+                        "type": "integer"
+                    },
+                    "type": {
+                        "description": "Currently there are two available activity types; 'translated', 'proofread'.",
+                        "type": "string"
+                    }
+                }
+            },
+            "ActivityLinks": {
+                "type": "object",
+                "properties": {
+                    "comments": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "project": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "comments": {
+                "type": "object"
+            },
+            "project": {
+                "type": "object",
+                "properties": {
+                    "callback_url": {
+                        "description": "Callback URL to notify when project status changed.",
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "custom": {
+                        "description": "Custom data provided while creating a new project.",
+                        "type": "object"
+                    },
+                    "delivery_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "errors": {
+                        "description": "A list of errors. Visible when creating a project and uploading your documents at the same time, in case of multiple errors.",
+                        "type": "array"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "links": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "price": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "source_language": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "The status of translation packaging. Possible values are 'started', 'packaging', 'completed'. When completed, you can make a \/download call to download the last translation package.",
+                        "type": "string"
+                    },
+                    "target_languages": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "valid_until": {
+                        "description": "Available only if status is `pending`",
+                        "type": "string"
+                    },
+                    "word_count": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "ActivityList": {
+                "type": "object",
+                "properties": {
+                    "activities": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "meta": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "activities": {
+                "type": "array"
+            },
+            "meta": {
+                "type": "object"
+            },
+            "Comment": {
+                "type": "object",
+                "properties": {
+                    "comment": {
+                        "description": "Comment text.",
+                        "type": "string"
+                    },
+                    "commented_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "links": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "CommentLinks": {
+                "type": "object",
+                "properties": {
+                    "Activity": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "project": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "CommentList": {
+                "type": "object",
+                "properties": {
+                    "activities": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "meta": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Document": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "links": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "uploaded_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "word_count": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "DocumentLinks": {
+                "type": "object",
+                "properties": {
+                    "download": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "project": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "download": {
+                "type": "object"
+            },
+            "DocumentList": {
+                "type": "object",
+                "properties": {
+                    "documents": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "meta": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "documents": {
+                "type": "object"
+            },
+            "Error": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "help": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "http_code": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Formats": {
+                "type": "object",
+                "properties": {
+                    "documents": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "glossaries": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "styleguides": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "glossaries": {
+                "type": "array"
+            },
+            "styleguides": {
+                "type": "array"
+            },
+            "Glossary": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "DocumentLinks": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "links": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "uploaded_at": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "GlossaryList": {
+                "type": "object",
+                "properties": {
+                    "glossaries": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "meta": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Language": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "LanguageProgress": {
+                "type": "object",
+                "properties": {
+                    "languageCode": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "languageCode": {
+                "type": "object"
+            },
+            "LinksMeta": {
+                "type": "object",
+                "properties": {
+                    "self": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "self": {
+                "type": "object"
+            },
+            "Package": {
+                "type": "object",
+                "properties": {
+                    "key": {
+                        "description": "This is the unique package tracking key. You can use this key to track the current progress of the translation packaging with \/package\/check call.",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "The status of translation packaging. Possible values are 'started', 'packaging', 'completed'. When completed, you can make a \/download call to download the last translation package.",
+                        "type": "string"
+                    }
+                }
+            },
+            "PackageStatus": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "description": "The status of translation packaging. Possible values are 'started', 'packaging', 'completed'. When completed, you can make a \/download call to download the last translation package.",
+                        "type": "string"
+                    }
+                }
+            },
+            "PagingLinksMeta": {
+                "type": "object",
+                "properties": {
+                    "next": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "previous": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "PagingMeta": {
+                "type": "object",
+                "properties": {
+                    "paging": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "paging": {
+                "type": "object"
+            },
+            "Progress": {
+                "type": "object",
+                "properties": {
+                    "LanguageProgress": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "languages": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "links": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "ProgressLink": {
+                "type": "object",
+                "properties": {
+                    "project": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "ProgressSub": {
+                "type": "object",
+                "properties": {
+                    "proofreading": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "translation": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "custom": {
+                "type": "object"
+            },
+            "errors": {
+                "type": "array"
+            },
+            "price": {
+                "type": "object"
+            },
+            "target_languages": {
+                "type": "array"
+            },
+            "ProjectLinks": {
+                "type": "object",
+                "properties": {
+                    "documents": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "glossaries": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "styleguides": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "ProjectList": {
+                "type": "object",
+                "properties": {
+                    "PagingMeta": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "meta": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "projects": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "projects": {
+                "type": "array"
+            },
+            "StyleGuide": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "DocumentLinks": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "links": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "uploaded_at": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "StyleGuideList": {
+                "type": "object",
+                "properties": {
+                    "PagingMeta": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "meta": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "styleguides": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "Token": {
+                "type": "object",
+                "properties": {
+                    "access_token": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "expires_in": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "scope": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "token_type": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "target_languages[]": {
+                "type": "array"
+            }
+        }
+    }
+}
