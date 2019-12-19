@@ -1,0 +1,1779 @@
+{
+    "id": "5c0f57679957a9b371ca5046bf87a36d",
+    "name": "MotaWord",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "03dfc5d03744d13e5ff8ae536030c4d1",
+            "name": "Available endpoints",
+            "url": "http:\/\/api.motaword.com\/\/",
+            "description": "The root endpoint will provide you a JSON Swagger definition.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "f2becb022375b867f5fe23452335ec8b",
+            "name": "Get a list of supported formats",
+            "url": "http:\/\/api.motaword.com\/\/formats",
+            "description": "Get a list of supported formats for documents, style guides and extensions.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "dffde74c3ebd1545be483ae016ab5449",
+            "name": "Download the global glossary.",
+            "url": "http:\/\/api.motaword.com\/\/glossary",
+            "description": "Download your corporate account's global glossary. This endpoint is available only for corporate account customers.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "cf5184f794d05b0689b5245663110e65",
+            "name": "Create or update the global glossary.",
+            "url": "http:\/\/api.motaword.com\/\/glossary",
+            "description": "Update your corporate account's global glossary. This endpoint is available only for corporate account customers.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "glossary",
+                    "description": "Glossary file. Currently supported formats: .xlsx, .tbx\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "7ac9a9d2334d86c0ea650da9671e99b8",
+            "name": "Get a list of supported languages",
+            "url": "http:\/\/api.motaword.com\/\/languages",
+            "description": "Get a list of supported languages",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "92ce017bf928b677b3eaf9cf7a28770c",
+            "name": "Get your account information and summary.",
+            "url": "http:\/\/api.motaword.com\/\/me",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "422c9ff52d2d2f55170547eadb802d2e",
+            "name": "Get a list of your projects",
+            "url": "http:\/\/api.motaword.com\/\/projects",
+            "description": "Get a list of your projects",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "page",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "per_page",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "b11c386c8ebd348b6424e02854bf6ad3",
+            "name": "Get a new quote",
+            "url": "http:\/\/api.motaword.com\/\/projects",
+            "description": "Create a new project",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "source_language",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "target_languages[]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback_url",
+                    "description": "Optional. If you provide a callback URL, we will send POST callbacks when the status of the current project is changed. Possible status changes are, 'translated', 'proofread', 'completed'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "custom",
+                    "description": "Optional. This is a consistent custom data parameter that will be given to you in the response across every request of this project model. Values should be provided like this, custom[my_key] = my_value.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "documents[]",
+                    "description": "Optional. You can add as many files as you want in documents[] parameter. Or you add your documents later in separate calls.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "styleguides[]",
+                    "description": "Optional. You can add as many files as you want in styleguides[] parameter. Or you add your style guides later in separate calls.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "glossaries[]",
+                    "description": "Optional. Only one glossary is supported at the moment.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "67163a2c30da6aaf4d1da9bd9abf4362",
+            "name": "Delete a project",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{id}",
+            "description": "Delete(cancel) a project.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "874ed88e959e575306216b232ea84792",
+            "name": "Get single project",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{id}",
+            "description": "Get single project",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "8120a01337af6cbd9f88242a56525a29",
+            "name": "Update project language pairs",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{id}",
+            "description": "Update project language pairs",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "source_language",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "target_languages[]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback_url",
+                    "description": "Optional. If you provide a callback URL, we will send POST callbacks when the status of the current project is changed. Possible status changes are, 'translated', 'proofread', 'completed'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "custom",
+                    "description": "Optional. This is a consistent custom data parameter that will be given to you in the response across every request of this project model. Values should be provided like this, custom[my_key] = my_value.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "d09a93edd7a304c5ac60c9e4e6cb40c6",
+            "name": "Trigger a call to your callback URL related to this project.",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{id}\/callback\/{actionType}",
+            "description": "Trigger a call to your callback URL related to this project.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "actionType",
+                    "description": "Callback type",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "ed06f93371f0f80299eaeafcff93e474",
+            "name": "Cancel your translation project",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{id}\/cancel",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "reason",
+                    "description": "Cancellation reason",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "144ac7b860c40f8cbf82ec2ecb7017cc",
+            "name": "Download the latest translation package.",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{id}\/download",
+            "description": "Download the latest translation package. You must have given a \/package call beforehand and wait until the packaging status is 'completed'.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "df09318f434eb4f0543afe19ac3b2cc1",
+            "name": "Download the latest translation package.",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{id}\/download\/{language}",
+            "description": "Download only the translation package of this language. You must have given a \/package call beforehand and wait until the packaging status is 'completed'.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "language",
+                    "description": "Language code. You can download the translation of only a specific language.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "843de979462ffb0640dd4f151bc8f245",
+            "name": "Launch your translation project",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{id}\/launch",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "payment_method",
+                    "description": "Optional. Determines which method to use for payment. Options are 'corporate', 'client'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "payment_code",
+                    "description": "Optional. According to your corporate account configuration, this may be required.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "budget_code",
+                    "description": "Optional with corporate accounts. Not available for others.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "d73848604a32d26797bdb40bb280d71a",
+            "name": "Package the translation of all languages to be downloaded.",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{id}\/package",
+            "description": "Package the translation project, make it ready to be downloaded.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "async",
+                    "description": "If you want to package and download the translation synchronously, mark this parameter as '0'. It will package the translation and then return the packaged file in the response, identical to \/download call after an asynchronous \/package call.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "4e813f4f1a8c2ac586209e21edcd708f",
+            "name": "Track the status of translation packaging.",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{id}\/package\/check",
+            "description": "This request will tell you the current progress of the translation packaging. You will use the 'key' provided by the \/package call.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "This is the package tracking key provided in the response of a \/package call.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "46c27882302cfd39d73b0bcbc4ce170f",
+            "name": "Package the translation of a specific target language to be downloaded.",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{id}\/package\/{language}",
+            "description": "Package the translation project, make it ready to be downloaded.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "language",
+                    "description": "Language code. You can download the translation of only a specific language.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "async",
+                    "description": "If you want to package and download the translation synchronously, mark this parameter as '0'. It will package the translation and then return the packaged file in the response, identical to \/download call after an asynchronous \/package call.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "151daf132e0bff54b9a6643879ca13b5",
+            "name": "Get project progress",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{id}\/progress",
+            "description": "Get the progress of an already launched project.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "8d23a0e1110c40215544a5c2a56cf76e",
+            "name": "Submit reports for a project",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{id}\/reports",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "activity_type",
+                    "description": "Activity Type",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "message",
+                    "description": "Report Message",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "69a2e4082e97961c15a5122f826701a2",
+            "name": "Get a list of realtime activities.",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/activities",
+            "description": "Get a list of realtime activities on the project, such as translation suggestion and translation approval.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "per_page",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "29b36a9ac4aaaf85ebf2c65181518f7b",
+            "name": "Get a single realtime activity.",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/activities\/{activityId}",
+            "description": "Get a single realtime activity.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "activityId",
+                    "description": "Activity ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "d3f89e1a18574de58a3f02a415130ad9",
+            "name": "Submit a comment to an activity.",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/activities\/{activityId}",
+            "description": "Submit a comment to an activity.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "activityId",
+                    "description": "Activity ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "comment",
+                    "description": "Comment text.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "c3604e6e8856ff6d3c69c69d045b7112",
+            "name": "Get a list of comments belonging to this activity.",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/activities\/{activityId}\/comments",
+            "description": "Get a list of comments belonging to this activity.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "activityId",
+                    "description": "Activity ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "7c25a57c5f2f5ac6ea7d4f1ed3a071bd",
+            "name": "Get a list of activity comments throughout the whole project.",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/comments",
+            "description": "Get a list of activity comments throughout the whole project.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "per_page",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "1ef375d01dfd03fbef10047dcff8323a",
+            "name": "Get a list of documents",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/documents",
+            "description": "Get a list of documents",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "3b5d3fef5b0e4abe899bdf683b15a88b",
+            "name": "Upload a new document",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/documents",
+            "description": "Upload a new document",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "documents[]",
+                    "description": "Optional. You can add as many files as you want in documents[] parameter. Or you add your documents later in separate calls.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "schemes[]",
+                    "description": "JSON string. If your documents have a scheme, as in cases of CSV files, use the same array index keys for `schemes` parameter to specify their schemes. See `Document Schemes` title in the API documentation.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "e36951dae0870a9a83bb9b3a3cf6eb90",
+            "name": "Delete the document",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/documents\/{documentId}",
+            "description": "Delete the document",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "documentId",
+                    "description": "Document ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "346fef35e0984caf337eef66fd510b3e",
+            "name": "Get single document",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/documents\/{documentId}",
+            "description": "Get single document",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "documentId",
+                    "description": "Document ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "c2ea93185ef7d85d1c6db43e218456b8",
+            "name": "Update the document.",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/documents\/{documentId}",
+            "description": "Update the document. File name and contents will replaced with the new one.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "documentId",
+                    "description": "Document ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "documents",
+                    "description": "Single file data. The name is plural to provide a consistent naming convention.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "schemes",
+                    "description": "JSON string. If your documents have a scheme, as in cases of CSV files, use the same array index keys for `schemes` parameter to specify their schemes. See `Document Schemes` title in the API documentation.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "8a42da76483f8179bc387c628a9edbd9",
+            "name": "Download a document",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/documents\/{documentId}\/download",
+            "description": "Download a document",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "documentId",
+                    "description": "Document ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "98028ae7282a8cb9b0ecfbb7831ea217",
+            "name": "Get a list of glossaries",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/glossaries",
+            "description": "Get a list of glossaries",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "2e60d5a9df229e91078ab8864c750783",
+            "name": "Upload a new glossary",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/glossaries",
+            "description": "Upload a new glossary",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "glossaries",
+                    "description": "You can only add one glossary, even though the name suggests multiple glossaries. This may be updated in the future to support multiple glossaries.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "5a4e97da19705a2664451049fd17de64",
+            "name": "Delete the glossary",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/glossaries\/{glossaryId}",
+            "description": "Delete the glossary",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "glossaryId",
+                    "description": "Glossary ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "9595664b3f7ef373c46e05c9a19dada5",
+            "name": "Get single glossary",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/glossaries\/{glossaryId}",
+            "description": "Get single glossary",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "glossaryId",
+                    "description": "Glossary ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "7ebf9fe8eb6f657d33fe1fc214c87e85",
+            "name": "Update the glossary.",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/glossaries\/{glossaryId}",
+            "description": "Update the glossary. File name and contents will replaced with the new one.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "glossaryId",
+                    "description": "Glossary ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "glossaries",
+                    "description": "You can only add one glossary, even though the name suggests multiple glossaries. This may be updated in the future to support multiple glossaries.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "39572b2aed46504f2212af886f0a4b1f",
+            "name": "Download a glossary",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/glossaries\/{glossaryId}\/download",
+            "description": "Download a glossary",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "glossaryId",
+                    "description": "Glossary ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "a81a17ecee62efc8d87b4c79b4263b59",
+            "name": "Get a list of style guides",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/styleguides",
+            "description": "Get a list of style guides",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "664780734c2722fae115ae31b30d46ad",
+            "name": "Upload a new style guide",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/styleguides",
+            "description": "Upload a new style guide",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "styleguides[]",
+                    "description": "Optional. You can add as many files as you want in styleguides[] parameter. Or you add your style guides later in separate calls.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "fe54ab5f21c6f4ee799063a453e72130",
+            "name": "Delete the style guide",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/styleguides\/{styleGuideId}",
+            "description": "Delete the style guide",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "styleGuideId",
+                    "description": "Style Guide ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "9d906533616693d4455a04ad3831f572",
+            "name": "Get single style guide",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/styleguides\/{styleGuideId}",
+            "description": "Get single style guide",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "styleGuideId",
+                    "description": "Style Guide ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "cc0aa2fca45de176c8fbf88731403a1c",
+            "name": "Update the style guide.",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/styleguides\/{styleGuideId}",
+            "description": "Update the style guide. File name and contents will replaced with the new one.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "styleGuideId",
+                    "description": "Style Guide ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "styleguides",
+                    "description": "Single file data. The name is plural to provide a consistent naming convention.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "452d039ab44f9cb0894d5cef3cb8f723",
+            "name": "Download a style guide",
+            "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/styleguides\/{styleGuideId}\/download",
+            "description": "Download a style guide",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "Project ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "styleGuideId",
+                    "description": "Style Guide ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "d71c1cae4cd555593ab0094d0294a73b",
+            "name": "Download the global style guide.",
+            "url": "http:\/\/api.motaword.com\/\/styleguide",
+            "description": "Download your corporate account's global style guide. This endpoint is available only for corporate account customers.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "999eb27223971060577db4640e28ebc0",
+            "name": "Create or update the global style guide.",
+            "url": "http:\/\/api.motaword.com\/\/styleguide",
+            "description": "Update your corporate account's global style guide. This endpoint is available only for corporate account customers.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "styleguide",
+                    "description": "Style guide file. Currently supported formats: .pdf, .docx, .txt\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        },
+        {
+            "id": "354015e397a503f5833924438a8ff3e0",
+            "name": "Retrieve an access token to interact with the API.",
+            "url": "http:\/\/api.motaword.com\/\/token",
+            "description": "MotaWord API is using OAuth2 procedures when authenticating or authorizing your API call. Currently, we only allow Client Credential type flow.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "grant_type",
+                    "description": "OAuth2 grant type. Currently only 'client_credentials' available.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5c0f57679957a9b371ca5046bf87a36d",
+            "rawModeData": ""
+        }
+    ]
+}
