@@ -1,5 +1,5 @@
 {
-    "id": "30b11332f2fcb7af1253d78c0f401ac7",
+    "id": "5540bf309f2beebe40c94dd53152beb1",
     "name": "MotaWord API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "2a0e49af88eb37b6d5dfaec6cd24506a",
+            "id": "9325860aab6df1fd6e3af740bbc7f3b6",
             "name": "Available endpoints",
             "url": "http:\/\/api.motaword.com\/\/",
             "description": "The root endpoint will provide you a JSON Swagger definition.\n",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "6483083d3a22eb8047c638aee8ba6f52",
+            "id": "6bfb1ef7af0f469d8fe53805158239f2",
             "name": "Get a list of supported formats",
             "url": "http:\/\/api.motaword.com\/\/formats",
             "description": "Get a list of supported formats for documents, style guides and extensions.\n",
@@ -52,11 +52,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "90e4872c55620dc795bd5998fcb86221",
+            "id": "b306f0beabde893c8598deeb55439d28",
             "name": "Get a list of supported languages",
             "url": "http:\/\/api.motaword.com\/\/languages",
             "description": "Get a list of supported languages",
@@ -75,11 +75,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "14c1668f49083836656fc06aa17bb5a9",
+            "id": "d6dae261b940cd2b05fa4aa7d0e111a4",
             "name": "Get your account information and summary.",
             "url": "http:\/\/api.motaword.com\/\/me",
             "description": "",
@@ -98,11 +98,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "0bb28b74c0af7c538ccf84dbd6c044c0",
+            "id": "99fbfa6ec2b23bed8fa998bac5e0abdf",
             "name": "Get a list of your projects",
             "url": "http:\/\/api.motaword.com\/\/projects",
             "description": "Get a list of your projects",
@@ -136,11 +136,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "40015d19acbb294e5c0b7579ef80af28",
+            "id": "70c853e59809c33ef134554770c9a6ea",
             "name": "Get a new quote",
             "url": "http:\/\/api.motaword.com\/\/projects",
             "description": "Create a new project",
@@ -209,11 +209,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "c8c2053a14fb3904b2f0c1e4ed19729c",
+            "id": "a5c3151f9693a36f64517535b17ee53c",
             "name": "Get single project",
             "url": "http:\/\/api.motaword.com\/\/projects\/{id}",
             "description": "Get single project",
@@ -240,11 +240,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "334aef1b3181e14007eec6f6fcd52246",
+            "id": "3977428c979ee2c77885bdfdf40ce944",
             "name": "Update project language pairs",
             "url": "http:\/\/api.motaword.com\/\/projects\/{id}",
             "description": "Update project language pairs",
@@ -299,11 +299,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "b79715e0ccc0ccbdbf3e7b88d576051c",
+            "id": "602a6a774a6a23faad289354f98318d6",
             "name": "Download the latest translation package.",
             "url": "http:\/\/api.motaword.com\/\/projects\/{id}\/download\/{language}",
             "description": "Download the latest translation package. If a language is provided, only the translation package of that language is returned. You must have given a \/package call beforehand and wait until the packaging status is 'completed'.",
@@ -337,11 +337,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "455adb9ba2955f97edf49e80d3739c8e",
+            "id": "3db300665b09e1b56f284f5a15add0be",
             "name": "Launch your translation project",
             "url": "http:\/\/api.motaword.com\/\/projects\/{id}\/launch",
             "description": "",
@@ -389,11 +389,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "373e852e08e56e2b18fa5edcdb8e06cf",
+            "id": "a95050de54f8bab7980b9ca7e6b9bb5e",
             "name": "Package the project to be downloaded.",
             "url": "http:\/\/api.motaword.com\/\/projects\/{id}\/package\/{language}",
             "description": "Package the translation project, make it ready to be downloaded.",
@@ -434,11 +434,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "d4e6dc8c3f4b371cd1bee1706cf3309e",
+            "id": "bae05ac4e6a7b1d7d1d5fee064a9e596",
             "name": "Track the status of translation packaging.",
             "url": "http:\/\/api.motaword.com\/\/projects\/{id}\/package\/check",
             "description": "This request will tell you the current progress of the translation packaging. You will use the 'key' provided by the \/package call.",
@@ -472,11 +472,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "f81833c324d85078035abed704df3bb5",
+            "id": "fe988307fe21a1cab950c528d9e1dfa1",
             "name": "Get project progress",
             "url": "http:\/\/api.motaword.com\/\/projects\/{id}\/progress",
             "description": "Get the progress of an already launched project.",
@@ -503,11 +503,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "1d85fb379176bd73cd75fe782725ecd0",
+            "id": "e64d1f9c7335e3d7568dce47ebca70f3",
             "name": "Get a list of realtime activities.",
             "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/activities",
             "description": "Get a list of realtime activities on the project, such as translation suggestion and translation approval.",
@@ -548,11 +548,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "396c4654fc5dd9469268e1e28ab7f057",
+            "id": "843d6b49e371272d6c01a1470b1dfac1",
             "name": "Get a single realtime activity.",
             "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/activities\/{activityId}",
             "description": "Get a single realtime activity.",
@@ -586,11 +586,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "09c4e99d81042a81d08642f3fc939a78",
+            "id": "455cb84f0b07506f1b44f271add69504",
             "name": "Submit a comment to an activity.",
             "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/activities\/{activityId}",
             "description": "Submit a comment to an activity.",
@@ -631,11 +631,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "13b019b13304aeb0c93582823095d209",
+            "id": "e655da4313a18759630b0773b16d2c0f",
             "name": "Get a list of comments belonging to this activity.",
             "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/activities\/{activityId}\/comments",
             "description": "Get a list of comments belonging to this activity.",
@@ -669,11 +669,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "ce91bab0dd30deb2562cc4209428276c",
+            "id": "e88db1a9fc6a7b2624f8b45588248a36",
             "name": "Get a list of activity comments throughout the whole project.",
             "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/comments",
             "description": "Get a list of activity comments throughout the whole project.",
@@ -714,11 +714,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "26edc8dcf83e505923f55ea83e191352",
+            "id": "564b53f139d7633fcc3ce0982d71a436",
             "name": "Get a list of documents",
             "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/documents",
             "description": "Get a list of documents",
@@ -745,11 +745,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "8e3ada2d297ad56d37e809631dcdb9ad",
+            "id": "a08c0b52ff122d5ee3c3a9c3736b55c9",
             "name": "Upload a new document",
             "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/documents",
             "description": "Upload a new document",
@@ -783,11 +783,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "d734e885d0028b5fc00708cd22b5a0b8",
+            "id": "2246746aa272efa341981b724a6f6817",
             "name": "Delete the document",
             "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/documents\/{documentId}",
             "description": "Delete the document",
@@ -821,11 +821,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "5515f1d35afdcd290a53e3d1ce269ebe",
+            "id": "c3dfc7a58d182a387733ecb2b6fab904",
             "name": "Get single document",
             "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/documents\/{documentId}",
             "description": "Get single document",
@@ -859,11 +859,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "607e6fc6d2e9e8d15d20a0a6c048fea0",
+            "id": "a48b8a4aa79379e94217a5f9856cee7a",
             "name": "Update the document.",
             "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/documents\/{documentId}",
             "description": "Update the document. File name and contents will replaced with the new one.",
@@ -904,11 +904,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "53e13249c4ff2c676239dc372e2b5a8b",
+            "id": "fc8c7778f0167c120bd4e007f6c28256",
             "name": "Download a document",
             "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/documents\/{documentId}\/download",
             "description": "Download a document",
@@ -942,11 +942,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "6f4aaea2bec8b3a660cbcc128e24b525",
+            "id": "da7892194a656f942f1e5be0b4611ffa",
             "name": "Get a list of glossaries",
             "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/glossaries",
             "description": "Get a list of glossaries",
@@ -973,11 +973,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "1c5a991d6c88029fcf055a7ffbb58f38",
+            "id": "0c9efcca404f3873c529a18306ebf868",
             "name": "Upload a new glossary",
             "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/glossaries",
             "description": "Upload a new glossary",
@@ -1011,11 +1011,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "5d80332e465384e0453bc008ea2f5d9b",
+            "id": "02e7c980d4f640c029def6cf97808eb9",
             "name": "Delete the glossary",
             "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/glossaries\/{glossaryId}",
             "description": "Delete the glossary",
@@ -1049,11 +1049,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "4fb5836279ebf44331290aba873b492b",
+            "id": "d7715dcec113a98015eecb4bf2465142",
             "name": "Get single glossary",
             "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/glossaries\/{glossaryId}",
             "description": "Get single glossary",
@@ -1087,11 +1087,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "cac926ec185fdf4444508a5ed56db4ca",
+            "id": "c8187167ff4b4ffd8459a9d19014a60b",
             "name": "Update the glossary.",
             "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/glossaries\/{glossaryId}",
             "description": "Update the glossary. File name and contents will replaced with the new one.",
@@ -1132,11 +1132,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "741e9520bba2e44a2e8de2241588721a",
+            "id": "89c85fa7ec5033ed4aeded2cec6bddb1",
             "name": "Download a glossary",
             "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/glossaries\/{glossaryId}\/download",
             "description": "Download a glossary",
@@ -1170,11 +1170,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "c873783a15fa7044e95fb9120a5f6939",
+            "id": "331918aebcd3506e8601aa6a07db6fa0",
             "name": "Get a list of style guides",
             "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/styleguides",
             "description": "Get a list of style guides",
@@ -1201,11 +1201,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "eb72aa3a5eb205af7fa723ab16bdf455",
+            "id": "f20336c1ec00438c869729f479e82ad0",
             "name": "Upload a new style guide",
             "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/styleguides",
             "description": "Upload a new style guide",
@@ -1239,11 +1239,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "52f57ac0f45c644e789c50eefbcb09de",
+            "id": "b8861a899b0f8c8a064f3664f6f63cf1",
             "name": "Delete the style guide",
             "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/styleguides\/{styleGuideId}",
             "description": "Delete the style guide",
@@ -1277,11 +1277,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "d88637858ad87d801de7c6e642f794a2",
+            "id": "9cea8ac998428d0f06b6c8b0a6b566f3",
             "name": "Get single style guide",
             "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/styleguides\/{styleGuideId}",
             "description": "Get single style guide",
@@ -1315,11 +1315,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "aebdcc98592ea94bc7ad7d5c62c9402c",
+            "id": "01fb92c573a5f846ef9c9be55e3930d0",
             "name": "Update the style guide.",
             "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/styleguides\/{styleGuideId}",
             "description": "Update the style guide. File name and contents will replaced with the new one.",
@@ -1360,11 +1360,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "316eae55a10f3e681313169f44e13cf1",
+            "id": "5a5d47f3a86160e3316d0ef1893a30dc",
             "name": "Download a style guide",
             "url": "http:\/\/api.motaword.com\/\/projects\/{projectId}\/styleguides\/{styleGuideId}\/download",
             "description": "Download a style guide",
@@ -1398,11 +1398,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         },
         {
-            "id": "974ea044de1baa79fbf8fcf3984cf9cd",
+            "id": "ef72c5a49792d46cfcd3dee58a305b59",
             "name": "Retrieve an access token to interact with the API.",
             "url": "http:\/\/api.motaword.com\/\/token",
             "description": "MotaWord API is using OAuth2 procedures when authenticating or authorizing your API call. Currently, we only allow Client Credential type flow.\n",
@@ -1429,7 +1429,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "30b11332f2fcb7af1253d78c0f401ac7",
+            "collectionId": "5540bf309f2beebe40c94dd53152beb1",
             "rawModeData": ""
         }
     ]
