@@ -64,5 +64,122 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-MotaWord is a company surfaced via the API Evangelist harvest backlog (source: new-submission) and added to the network as a stub for full-pipeline profiling.
-- https://motaword.com/
+MotaWord provides professional document translation, AI‑powered machine translation, localization, and interpretation services for businesses and individuals. Their platform supports human translation, post‑editing, academic evaluation, certified legal translation, and a suite of AI tools for continuous localization in CI/CD pipelines. MotaWord also offers integrations with popular legal and practice management software, enabling seamless workflow automation.
+
+**Areas:** Translation · Localization · AI · SaaS · Enterprise
+
+## MotaWord on APIs.io
+
+Everything profiled for MotaWord is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/motaword/](https://apis.io/providers/motaword/)** — or go straight to one of the APIs or properties below.
+
+### APIs (2)
+
+- [MotaWord API](https://apis.io/apis/motaword/motaword-api/) — Use MotaWord API to post and track your translation projects.
+- [MotaWord API API](https://apis.io/apis/motaword/motaword-api-api/) — Use MotaWord API to post and track your translation projects.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### JSON Schema (6)
+
+The data models the API reads and writes.
+
+- [ActiveWidget](https://apis.io/schemas/motaword/motaword-active-widget/)
+- [FilterVendorRequest](https://apis.io/schemas/motaword/motaword-filter-vendor-request/)
+- [InterpretSession](https://apis.io/schemas/motaword/motaword-interpret-session/)
+- [Project](https://apis.io/schemas/motaword/motaword-project/)
+- [User](https://apis.io/schemas/motaword/motaword-user/)
+- [UserUpdateContent](https://apis.io/schemas/motaword/motaword-user-update-content/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Motaword Context](https://apis.io/jsonld/motaword/motaword-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [MotaWord API Rules](https://apis.io/rules/motaword/motaword-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Motaword Domain Security](https://apis.io/security/motaword/motaword-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Motaword Plans Pricing](https://apis.io/plans/motaword/motaword-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://motaword.com/)
+- [Documentation](https://docs.motaword.com/docs)
+- [Getting started](https://docs.motaword.com/docs/getting-started)
+- [API reference](https://docs.motaword.com/reference)
+- [Pricing](https://www.motaword.com:443/pricing)
+- [Support](https://www.motaword.com/contact)
+- [Blog](https://www.motaword.com/blog)
+- [Terms of service](https://www.motaword.com/legal/terms)
+- [Privacy policy](https://www.motaword.com/legal/privacy)
+- [GitHub](https://github.com/MotaWord)
+
+## API Evangelist rating
+
+**Kin Score 49.8** — developing · rubric 0.24.0 · scored 2026-10-28
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 34.4 |
+| Contract governance | 79.1 |
+| Operational transparency | 5.3 |
+| Developer ergonomics | 52.4 |
+| Access clarity | 63.7 |
+
+**Agent readiness 38.4** — agent-ready
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | derived (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+
+**Regulatory alignment 22.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/motaword/](https://apis.io/providers/motaword/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for MotaWord: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/motaword/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
